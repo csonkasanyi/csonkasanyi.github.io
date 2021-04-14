@@ -1,0 +1,23 @@
+body {
+	background-image: url('../images/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.animation-wrapper {
+	margin: 0 auto 0 auto;
+	display: table;
+}
+.title {
+	text-transform: uppercase;
+	font-size: 120px;
+	color: #b48557;
+	text-align: center;
+	font-weight: bold;
+}
+.bemutatkozo {
+	text-transform: lowercase;
+	font-size: 60px;
+	text-align: center;
+	margin-top: 400px;
+}
