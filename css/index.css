@@ -21,3 +21,19 @@ body {
 	text-align: center;
 	margin-top: 400px;
 }
+.works {
+	display: flex;
+	background-color: beige;
+	opacity: 0.5;
+	margin: 20px auto;
+	justify-content: space-around;
+	width: 800px;
+
+}
+.work {
+	background-color: darkcyan;
+	width: 100px;
+	padding: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
