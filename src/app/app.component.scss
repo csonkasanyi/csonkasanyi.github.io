@@ -1,0 +1,27 @@
+nav {    
+    background-color: rgba(128, 128, 128, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        padding: 20px;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.8);
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: rgb(200, 200, 200);
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: all .3s;
+    }
+}
+
+#topButton {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    
+}

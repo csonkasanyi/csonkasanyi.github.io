@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+$breakpoints: (
+    'small': 600px,
+    'large': 1200px) !default;
+
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+
+        // Prints a media query based on the value
+        @media (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+
+    // If the key doesn't exist in the map
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        +"Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+}
+
+body {
+    background-image: url(./assets/images/bg3.jpg);
+
+    @include respond-to('small') {
+        background-image: url(./assets/images/bg2.jpg);
+        background-attachment: fixed;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.4);
+            padding: 40px;
+            width: 100vw;
+            min-height: 100vh;
+
+            h1 {
+                text-align: center;
+            }
+
+            h2 {
+                text-align: center;
+                margin: 20px 0;
+            }
+
+            .strong {
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            p,
+            li {
+                line-height: 1.5;
+            }
+
+            ul {
+                padding-left: 40px;
+            }
+
+        }
+
+        button {
+            background-color: aquamarine;
+            color: rgb(0, 85, 85);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            transition: all .3s;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: aquamarine;
+            background-color: rgb(0, 85, 85);
+        }
+}
+}
