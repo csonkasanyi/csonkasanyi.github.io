@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faBug } from '@fortawesome/free-solid-svg-icons';
+import { faNavicon, faSquareCaretUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,18 @@ import { faBug } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   title = 'cv-site';
-  faBug = faBug;
+  
+  faNavicon = faNavicon;
+  faSquareUp = faSquareCaretUp;
+
+  menuHandler() {
+    const menu = document.getElementById('menuContainer') as HTMLElement;
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('visible');
+    console.log(menu);
+    
+  }
+
   scrollTo(className: string):void {
     const elementList = document.querySelectorAll('.' + className);
     const element = elementList[0] as HTMLElement;

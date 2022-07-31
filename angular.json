@@ -107,5 +107,7 @@
       }
     }
   },
-  "defaultProject": "cv-site"
+  "cli": {
+    "analytics": false
+  }
 }

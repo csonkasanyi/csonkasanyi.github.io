@@ -1,0 +1,43 @@
+@use '../../base';
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    text-align: center;
+    color: base.$primary-color;
+    margin-top: -1rem;
+    margin-bottom: 4rem;
+}
+
+.stacks {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    .stack {
+        height: 200px;
+        width: 300px;
+        font-size: 3rem;
+        background-color: base.$secondary-color;
+        color: base.$primary-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        transition: all .3s;
+
+        transform: rotate(0);
+
+        fa-icon {
+            margin-bottom: 20px;
+        }
+    }
+
+    .stack:hover {
+        transform: scale(1.04);
+    }
+}

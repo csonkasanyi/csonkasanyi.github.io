@@ -1,9 +1,29 @@
 <div class="container contact">
     <h1>Kapcsolat</h1>
-    <ul>
-        <li>web: <a href="http://www.csonkasanyi.hu">www.csonkasanyi.hu</a></li>
-        <li><a href="https://www.linkedin.com/in/csonka-s%C3%A1ndor-468b0223a/">LinkedIn</a></li>
-        <li><a href="mailto:hello@csonkasanyi.hu">hello@csonkasanyi.hu</a></li>
-        <li><a href="https://github.com/csonkasanyi">GitHub</a></li>
-    </ul>
+    <div class="contactsContainer">
+        <div class="oneContact">
+            <a href="mailto:hello@csonkasanyi.hu">
+                <fa-icon [icon]="faAt"></fa-icon>
+                hello@csonkasanyi.hu
+            </a>
+        </div>
+        <div class="oneContact">
+            <a href="http://www.csonkasanyi.hu">
+                <fa-icon [icon]="faChrome"></fa-icon>
+                www.csonkasanyi.hu
+            </a>
+        </div>
+        <div class="oneContact">
+            <a href="https://www.linkedin.com/in/csonka-s%C3%A1ndor-468b0223a/">
+                <fa-icon [icon]="faLinkedin"></fa-icon>
+                LinkedIn
+            </a>
+        </div>
+        <div class="oneContact">
+            <a href="https://github.com/csonkasanyi">
+                <fa-icon [icon]="faGithub"></fa-icon>
+                GitHub
+            </a>
+        </div>
+    </div>
 </div>

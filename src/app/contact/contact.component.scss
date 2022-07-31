@@ -1,0 +1,51 @@
+@use "../../base";
+
+.contact {
+    min-height: 400px;
+     h1 {
+        margin-bottom: 2rem;
+     }
+
+    .contactsContainer {
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 2rem;
+        
+        fa-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        
+        .oneContact {
+            
+            width: 300px;
+            font-size: 1.5rem;
+            background-color: base.$secondary-color;
+            border-radius: 5px;
+            transition: all .3s;
+    
+            transform: rotate(0);
+    
+            a {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+                text-decoration: none;
+                color: base.$primary-color;
+            }
+
+        }
+
+        .oneContact:hover {
+            transform: scale(1.04);
+        }
+
+
+    }
+
+}

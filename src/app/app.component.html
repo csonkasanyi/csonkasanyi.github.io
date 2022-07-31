@@ -5,10 +5,23 @@
   <a routerLink="/contact">Kapcsolat</a>
 </nav> -->
 <div class="top"></div>
-<fa-icon [icon]="faBug"></fa-icon>
-<app-about></app-about>
-<app-stack></app-stack>
-<app-works></app-works>
-<app-contact></app-contact>
-<button (click)="scrollTo('top')" id="topButton">Fel az oldal tetejére!</button>
+<div id="menuContainer" class="hidden">
+  <fa-icon [icon]="faNavicon" id="hamburger" (click)="menuHandler()"></fa-icon>
+  <div id="menu" class="visible">
+      <a href="#aboutComponent">Bemutatkozás</a>
+      <a href="#stackComponent">Tech stack</a>
+      <a href="#worksComponent">Munkáim</a>
+      <a href="#contactComponent">Kapcsolat</a>
+  </div>
+</div>
+<div class="bgimg-1">
+  <app-about id="aboutComponent"></app-about>
+</div>
+<app-stack id="stackComponent"></app-stack>
+<div class="bgimg-2"></div>
+<app-works id="worksComponent"></app-works>
+<div class="bgimg-4">
+  <app-contact id="contactComponent"></app-contact>
+</div>
+<fa-icon [icon]="faSquareUp" (click)="scrollTo('top')" id="topButton"></fa-icon>
 <router-outlet></router-outlet>

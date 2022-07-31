@@ -1,27 +1,102 @@
-nav {    
-    background-color: rgba(128, 128, 128, 0.5);
+@use '../base';
+
+#menuContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    transition: right 1s;
+    z-index: 11;
 
-    a {
-        padding: 20px;
-        text-decoration: none;
-        color: rgba(0, 0, 0, 0.8);
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-
-    a:hover {
-        color: rgb(200, 200, 200);
-        background-color: rgba(0, 0, 0, 0.8);
+    #hamburger {
+        font-size: 3rem;
         transition: all .3s;
+        background-color: base.$primary-color;
+        color: base.$secondary-color;
+        padding: 18px;
+        z-index: 2;
     }
+    
+    #menu {
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+    
+            a {
+                list-style: none;
+                padding: 2rem 4rem;
+                text-align: center;
+                font-size: 1.5rem;
+                text-transform: lowercase;
+                cursor: pointer;
+                background-color: base.$primary-color;
+                color: base.$secondary-color;
+                transition: all .3s;
+                text-decoration: none;
+            }
+            
+            a:hover {
+                color: base.$primary-color;
+                background-color: base.$secondary-color;
+            }
+    }
+}
+
+
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("../assets/images/bg4.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("../assets/images/bg7.jpg");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("../assets/images/bg6.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("../assets/images/bg8.jpg");
+    min-height: 400px;
+}
+
+.hidden {
+    right: -287px;
+}
+
+.visible {
+    right: 0px;
 }
 
 #topButton {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    
+    color: base.$primary-color;
+    cursor: pointer;
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 576px) {
+    .hidden {
+        right: -308px;
+    }
+
+    .bgimg-1 {
+        background-position: 66% 50%;
+        background-attachment: local;
+    }
 }

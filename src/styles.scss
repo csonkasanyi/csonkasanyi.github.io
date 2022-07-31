@@ -1,3 +1,5 @@
+@use 'base';
+
 /* You can add global styles to this file, and also import other style files */
 $breakpoints: (
     'small': 600px,
@@ -20,11 +22,9 @@ $breakpoints: (
 }
 
 body {
-    background-image: url(./assets/images/bg3.jpg);
-
+    
     @include respond-to('small') {
-        background-image: url(./assets/images/bg2.jpg);
-        background-attachment: fixed;
+
     }
 }
 
@@ -32,7 +32,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
 
     body {
         background-size: cover;
@@ -43,10 +43,12 @@ body {
             background-color: rgba(255, 255, 255, 0.4);
             padding: 40px;
             width: 100vw;
-            min-height: 100vh;
 
             h1 {
+                font-size: 3rem;
+                margin-bottom: 2rem;
                 text-align: center;
+                color: base.$primary-color;
             }
 
             h2 {
@@ -59,8 +61,7 @@ body {
                 margin-bottom: 20px;
             }
 
-            p,
-            li {
+            p, li {
                 line-height: 1.5;
             }
 
@@ -71,8 +72,8 @@ body {
         }
 
         button {
-            background-color: aquamarine;
-            color: rgb(0, 85, 85);
+            color: base.$secondary-color;
+            background-color: base.$primary-color;
             padding: 10px;
             border: none;
             border-radius: 5px;
@@ -81,8 +82,8 @@ body {
         }
 
         button:hover {
-            color: aquamarine;
-            background-color: rgb(0, 85, 85);
+            background-color: base.$secondary-color;
+            color: base.$primary-color;
         }
 }
 }
