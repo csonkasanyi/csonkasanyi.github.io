@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faAngular, faBootstrap, faCss3, faGithub, faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faAngular, faBootstrap, faCss3, faGithub, faHtml5, faJs, faReact, faSass } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-stack',
@@ -14,6 +14,7 @@ export class StackComponent implements OnInit {
   faReact = faReact;
   faAngular = faAngular;
   faGithub = faGithub;
+  faSass = faSass;
   constructor() { }
 
   ngOnInit(): void {

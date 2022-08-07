@@ -37,6 +37,10 @@
         img {
           width: 400px;
         }
+
+        .blured {
+          filter: blur(4px);
+        }
       }
 
       .flip-card-back {
@@ -70,4 +74,25 @@
   }
 
 }
+
+}
+
+@media screen and (max-width: 576px) {
+  .works {
+
+    padding: 10px;
+    .cards {
+      .flip-card {
+        width: 300px;
+
+        .flip-card-inner {
+          .flip-card-front {
+            img {
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

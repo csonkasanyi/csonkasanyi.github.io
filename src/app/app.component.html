@@ -5,15 +5,7 @@
   <a routerLink="/contact">Kapcsolat</a>
 </nav> -->
 <div class="top"></div>
-<div id="menuContainer" class="hidden">
-  <fa-icon [icon]="faNavicon" id="hamburger" (click)="menuHandler()"></fa-icon>
-  <div id="menu" class="visible">
-      <a href="#aboutComponent">Bemutatkozás</a>
-      <a href="#stackComponent">Tech stack</a>
-      <a href="#worksComponent">Munkáim</a>
-      <a href="#contactComponent">Kapcsolat</a>
-  </div>
-</div>
+<app-nav></app-nav>
 <div class="bgimg-1">
   <app-about id="aboutComponent"></app-about>
 </div>

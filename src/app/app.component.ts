@@ -12,13 +12,6 @@ export class AppComponent {
   faNavicon = faNavicon;
   faSquareUp = faSquareCaretUp;
 
-  menuHandler() {
-    const menu = document.getElementById('menuContainer') as HTMLElement;
-    menu.classList.toggle('hidden');
-    menu.classList.toggle('visible');
-    console.log(menu);
-    
-  }
 
   scrollTo(className: string):void {
     const elementList = document.querySelectorAll('.' + className);
