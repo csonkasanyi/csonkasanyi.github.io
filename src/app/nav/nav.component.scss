@@ -83,4 +83,16 @@ $breakpoints: (
                 background-color: base.$secondary-color;
             }
     }
+
+    .visibleHamburger {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .visibleMenu {
+        display: flex;
+    }
 }
