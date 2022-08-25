@@ -1,7 +1,7 @@
 @use "../../base";
 
 .contact {
-    min-height: 400px;
+    min-height: 25rem;
      h1 {
         margin-bottom: 2rem;
      }
@@ -21,10 +21,10 @@
         
         .oneContact {
             
-            width: 300px;
+            width: 18.75rem;
             font-size: 1.5rem;
             background-color: base.$secondary-color;
-            border-radius: 5px;
+            border-radius: 0.32rem;
             transition: all .3s;
     
             transform: rotate(0);
@@ -34,7 +34,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                height: 200px;
+                height: 12.5rem;
                 text-decoration: none;
                 color: base.$primary-color;
             }

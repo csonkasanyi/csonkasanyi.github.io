@@ -2,7 +2,7 @@
 
 .about {
     width: 100vw;
-    min-height: 700px;
+    min-height: 43.75rem;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -12,13 +12,13 @@
     
         img {
             width: 25rem;
-            border-radius: 5px;
+            border-radius: 0.32rem;
             z-index: 10;
             transition: all .3s;
         }
     
         img:hover {
-            box-shadow: 0 0 20px 0px black;
+            box-shadow: 0 0 1.25rem 0 black;
         }
 
     .text {
@@ -28,7 +28,7 @@
         align-items: center;
 
         h2, h3 {
-            text-shadow: 0 0 10px base.$secondary-color;
+            text-shadow: 0 0 0.625rem base.$secondary-color;
         }
 
         h2, h3, button {
@@ -59,7 +59,7 @@
     
         @keyframes slide-in {
             0% {
-                left: -100px;
+                left: -6.25rem;
                 opacity: 0;}
     
             75% {
@@ -67,7 +67,7 @@
             }
     
             100% {
-                left: 0px;
+                left: 0;
                 opacity: 1;}
         }
     }
