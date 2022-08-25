@@ -48,9 +48,7 @@ export class NavComponent implements OnInit {
     menu.style.display = 'none';
   }
   
-  toggleMenu() {
-    console.log('hamburger clicked');
-    
+  toggleMenu() {    
     const hamburger = document.getElementById('hamburger') as HTMLElement;
     const close = document.getElementById('close') as HTMLElement;
     const menu = document.getElementById('menu') as HTMLElement;
