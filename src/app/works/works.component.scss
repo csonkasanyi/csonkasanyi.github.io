@@ -33,7 +33,10 @@
         background-color: transparent;
 
         img {
-          width: 25rem;
+          margin:auto;
+          max-width: 25rem;
+          max-height: 25rem;
+          display: block;
         }
 
         .blured {
@@ -63,13 +66,21 @@
           a {
             text-decoration: none;
             padding: 0.5rem 2rem;
-            color: base.$primary-color
+            color: base.$primary-color;
           }
         }
 
         .bold {
           margin-top: 1rem;
           font-weight: bold;
+        }
+
+        .link {
+          margin-top: 3rem;
+
+          a {
+            padding: 0;
+          }
         }
       }
     }

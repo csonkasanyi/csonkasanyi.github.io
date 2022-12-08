@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+.works .cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+}
+.works .cards .flip-card {
+  background-color: transparent;
+  width: 25rem;
+  height: 28rem;
+  perspective: 62.5rem;
+}
+.works .cards .flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+}
+.works .cards .flip-card .flip-card-inner .flip-card-front, .works .cards .flip-card .flip-card-inner .flip-card-back {
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.works .cards .flip-card .flip-card-inner .flip-card-front {
+  background-color: transparent;
+}
+.works .cards .flip-card .flip-card-inner .flip-card-front img {
+  width: 25rem;
+}
+.works .cards .flip-card .flip-card-inner .flip-card-front .blured {
+  filter: blur(0.25rem);
+}
+.works .cards .flip-card .flip-card-inner .flip-card-back {
+  padding-top: 1rem;
+  background-color: rgb(127, 255, 212);
+  color: rgb(0, 85, 85);
+  padding: 0.625rem;
+  min-height: 18.75rem;
+  max-height: 30rem;
+  transform: rotateY(180deg);
+}
+.works .cards .flip-card .flip-card-inner .flip-card-back h1 {
+  color: rgb(0, 85, 85);
+  font-size: 1.5rem;
+}
+.works .cards .flip-card .flip-card-inner .flip-card-back p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+.works .cards .flip-card .flip-card-inner .flip-card-back p a {
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  color: rgb(0, 85, 85);
+}
+.works .cards .flip-card .flip-card-inner .flip-card-back .bold {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.works .cards .flip-card .flip-card-inner .flip-card-back .link {
+  margin-top: 3rem;
+}
+.works .cards .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 576px) {
+  .works {
+    padding: 0.625rem;
+  }
+  .works .cards .flip-card {
+    width: 18.75rem;
+    height: 37rem;
+  }
+  .works .cards .flip-card .flip-card-inner .flip-card-front img {
+    width: 18.75rem;
+  }
+  .works .cards .flip-card .flip-card-inner .flip-card-back {
+    min-height: 18.75rem;
+    max-height: 36rem;
+  }
+}
