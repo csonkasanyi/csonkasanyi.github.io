@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+.contact {
+  min-height: 25rem;
+}
+.contact h1 {
+  margin-bottom: 2rem;
+}
+.contact .contactsContainer {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.contact .contactsContainer fa-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.contact .contactsContainer .oneContact {
+  width: 18.75rem;
+  font-size: 1.5rem;
+  background-color: rgb(127, 255, 212);
+  border-radius: 0.32rem;
+  transition: all 0.3s;
+  transform: rotate(0);
+}
+.contact .contactsContainer .oneContact a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 12.5rem;
+  text-decoration: none;
+  color: rgb(0, 85, 85);
+}
+.contact .contactsContainer .oneContact:hover {
+  transform: scale(1.04);
+}

@@ -43,7 +43,7 @@ body {
 
         .container {
             background-color: rgba(255, 255, 255, 0.4);
-            padding: 40px;
+            padding: 2.5rem;
             width: 100vw;
 
             h1 {
@@ -55,12 +55,12 @@ body {
 
             h2 {
                 text-align: center;
-                margin: 20px 0;
+                margin: 1.25rem 0;
             }
 
             .strong {
                 font-weight: bold;
-                margin-bottom: 20px;
+                margin-bottom: 1.25rem;
             }
 
             p, li {
@@ -68,7 +68,7 @@ body {
             }
 
             ul {
-                padding-left: 40px;
+                padding-left: 2.5rem;
             }
 
         }
@@ -76,9 +76,9 @@ body {
         button {
             color: base.$secondary-color;
             background-color: base.$primary-color;
-            padding: 10px;
+            padding: 0.625rem;
             border: none;
-            border-radius: 5px;
+            border-radius: 0.32rem;
             transition: all .3s;
             cursor: pointer;
         }

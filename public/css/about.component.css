@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+.about {
+  width: 100vw;
+  min-height: 43.75rem;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about img {
+  width: 25rem;
+  border-radius: 0.32rem;
+  z-index: 10;
+  transition: all 0.3s;
+}
+.about img:hover {
+  box-shadow: 0 0 1.25rem 0 black;
+}
+.about .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about .text h2, .about .text h3 {
+  text-shadow: 0 0 0.625rem rgb(127, 255, 212);
+}
+.about .text h2, .about .text h3, .about .text button {
+  position: relative;
+  animation: slide-in 2s ease-in-out forwards;
+  transition: all 0.3s;
+}
+.about .text h2 {
+  font-size: 4rem;
+  margin: 4rem 0;
+  color: rgb(0, 85, 85);
+}
+.about .text h2:hover, .about .text h3:hover, .about .text button:hover {
+  transform: rotate(1deg);
+}
+.about .text h3 {
+  font-size: 2.5rem;
+  color: rgb(0, 85, 85);
+}
+.about .text button {
+  font-size: 1.5rem;
+  text-transform: lowercase;
+}
+@keyframes slide-in {
+  0% {
+    left: -6.25rem;
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about img {
+    width: 15rem;
+  }
+  .about .text h2 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+  }
+  .about .text h3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .about .text h2 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+  }
+  .about .text h3 {
+    font-size: 1.5rem;
+  }
+}

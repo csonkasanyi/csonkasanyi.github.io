@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-2, .bgimg-4 {
+  min-height: 25rem;
+}
+
+.bgimg-1 {
+  background-image: url("../assets/images/bg4.jpg");
+}
+
+.bgimg-2 {
+  background-image: url("../assets/images/bg7.jpg");
+}
+
+.bgimg-4 {
+  background-image: url("../assets/images/bg8.jpg");
+}
+
+#topButton {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  color: rgb(0, 85, 85);
+  cursor: pointer;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 576px) {
+  .hidden {
+    right: -19.25rem;
+  }
+  .bgimg-1 {
+    background-position: 66% 50%;
+    background-attachment: scroll;
+  }
+  #menuContainer {
+    display: none;
+  }
+}

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+#menuContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100vw;
+  position: fixed;
+  transition: right 1s;
+  z-index: 11;
+  background-color: rgba(0, 85, 85, 0.6);
+  transition: top 0.3s;
+}
+#menuContainer #hamburger, #menuContainer #close {
+  font-size: 3rem;
+  transition: all 0.3s;
+  color: rgb(127, 255, 212);
+  padding: 1rem;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  #menuContainer #hamburger, #menuContainer #close {
+    display: none;
+  }
+}
+#menuContainer #close {
+  display: none;
+}
+#menuContainer #menu {
+  z-index: 10;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  #menuContainer #menu {
+    display: flex;
+    flex-direction: row;
+  }
+}
+#menuContainer #menu a {
+  list-style: none;
+  padding: 2rem 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  cursor: pointer;
+  color: rgb(127, 255, 212);
+  transition: all 0.3s;
+  text-decoration: none;
+}
+@media (min-width: 900px) {
+  #menuContainer #menu a {
+    padding: 2rem 3rem;
+  }
+}
+#menuContainer #menu a:hover {
+  color: rgb(0, 85, 85);
+  background-color: rgb(127, 255, 212);
+}
+#menuContainer .visibleHamburger {
+  display: block;
+}
+#menuContainer .hidden {
+  display: none;
+}
+#menuContainer #menu.visibleMenu {
+  display: flex;
+}

@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  text-align: center;
+  color: rgb(0, 85, 85);
+  margin-top: -1rem;
+  margin-bottom: 4rem;
+}
+
+.stacks {
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+}
+.stacks .stack {
+  height: 12.5rem;
+  width: 18.75rem;
+  font-size: 3rem;
+  background-color: rgb(127, 255, 212);
+  color: rgb(0, 85, 85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.32rem;
+  transition: all 0.3s;
+  transform: rotate(0);
+}
+.stacks .stack fa-icon {
+  margin-bottom: 1.25rem;
+}
+.stacks .stack:hover {
+  transform: scale(1.04);
+}

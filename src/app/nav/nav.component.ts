@@ -13,7 +13,7 @@ export class NavComponent implements OnInit {
   
   constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {    
     let prevScrollpos = window.pageYOffset;
     window.onscroll = () => {
       let currentScrollPos = window.pageYOffset;
@@ -46,5 +46,16 @@ export class NavComponent implements OnInit {
     hamburger.style.display = 'block';
     close.style.display = 'none';
     menu.style.display = 'none';
+  }
+  
+  toggleMenu() {    
+    const hamburger = document.getElementById('hamburger') as HTMLElement;
+    const close = document.getElementById('close') as HTMLElement;
+    const menu = document.getElementById('menu') as HTMLElement;
+    
+    hamburger.classList.toggle('visibleHamburger');
+    close.classList.toggle('hidden')
+    menu.classList.toggle('visibleMenu')
+
   }
 }

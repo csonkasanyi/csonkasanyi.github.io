@@ -14,12 +14,12 @@ h3 {
 .stacks {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem;
     flex-wrap: wrap;
 
     .stack {
-        height: 200px;
-        width: 300px;
+        height: 12.5rem;
+        width: 18.75rem;
         font-size: 3rem;
         background-color: base.$secondary-color;
         color: base.$primary-color;
@@ -27,13 +27,13 @@ h3 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 5px;
+        border-radius: 0.32rem;
         transition: all .3s;
 
         transform: rotate(0);
 
         fa-icon {
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
         }
     }
 

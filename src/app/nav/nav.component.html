@@ -1,7 +1,7 @@
 <nav id="menuContainer">
-    <fa-icon [icon]="faNavicon" id="hamburger" (click)="menuHandler()"></fa-icon>
-    <fa-icon [icon]="faXmark" id="close" (click)="closeMenu()"></fa-icon>
-    <div id="menu" class="hide">
+    <fa-icon [icon]="faNavicon" id="hamburger" (click)="toggleMenu()" class="visibleHamburger"></fa-icon>
+    <fa-icon [icon]="faXmark" id="close" (click)="toggleMenu()" class="hidden"></fa-icon>
+    <div id="menu" class="">
         <a href="#aboutComponent">Bemutatkozás</a>
         <a href="#stackComponent">Tech stack</a>
         <a href="#worksComponent">Munkáim</a>
